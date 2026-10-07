@@ -1,0 +1,17 @@
+# Served at https://flukeychip.github.io/robots.txt
+#
+# This is the ONLY robots.txt on this domain that crawlers read. Project sites
+# live under sub paths (/Project-Portfolio/, ...), and a robots.txt inside one
+# of those is ignored, so every rule for every project page has to be written
+# here with its full path from the domain root.
+
+User-agent: *
+Allow: /
+
+# Kept out of search results: a photo of me, and a resume carrying a phone
+# number and a home zip code. Both stay reachable to anyone with the link -
+# robots.txt asks crawlers not to index, it does not restrict access.
+Disallow: /Project-Portfolio/assets/Misc/me.png
+Disallow: /Project-Portfolio/assets/Misc/Alexander_Arens_resume.pdf
+
+Sitemap: https://flukeychip.github.io/Project-Portfolio/sitemap.xml
